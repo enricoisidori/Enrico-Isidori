@@ -1,0 +1,208 @@
+* { margin:0;
+  box-sizing: border-box;
+cursor: url('data:image/svg+xml;utf8,<svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32"><circle cx="10" cy="10" r="5" stroke-width="0" style="stroke: black; fill: black;"/></svg>') 10 10, auto;
+}
+
+@font-face {
+  font-family: font;
+  src: url('./asset/font/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: font-italic;
+  src: url('/asset/font/Inter-Italic.woff');
+}
+
+  html{
+    overflow: scroll;
+   overflow-x: hidden;
+}
+::-webkit-scrollbar {
+   width: 0;  /* Remove scrollbar space */
+   background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+   background: #FF0000;
+  }
+  ::selection {
+  background: #CCCCCC;
+}
+
+  body {
+    font-family: Inter, font, sans-serif;  /* carattere principale */
+    background-color: white;
+    overflow: visible;
+
+}
+
+.menu {
+  font-size: 14pt;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+
+}
+
+
+a {
+  color:black;
+  text-decoration: none;
+}
+
+a:hover {
+  color:black;
+  font-style: italic;
+}
+
+.corpo {
+  font-size: 10pt;
+  line-height: 12pt;
+}
+.descrizione {
+  padding-top: 80px;
+}
+
+.left {
+  text-align: left;
+  width:50vw;
+  float: left;
+  padding: 15px 30px 15px 30px;
+}
+
+.right {
+  text-align: right;
+  width: 50vw;
+  float: left;
+  padding: 15px 30px 15px 30px;
+}
+
+.center {
+  font-size: 10pt;
+  text-align: center;
+}
+
+.left3 {
+  text-align: left;
+  width:33.33vw;
+  float: left;
+  padding: 15px 30px 15px 30px;
+}
+
+.right3 {
+  text-align: right;
+  width: 33.33vw;
+  float: left;
+  padding: 15px 30px 15px 30px;
+}
+
+
+.center3 {
+  text-align: center;
+  width: 33.33vw;
+  float: left;
+  padding: 15px 30px 15px 30px;
+}
+
+.work {
+  background-color: pink;
+}
+
+.project {
+  height: 600px;
+  background-color: pink;
+  border-color: red;
+}
+
+.ita {
+  color: grey;
+}
+
+.info {
+  color: grey;
+}
+
+.content {
+  width: 66.66%;
+  margin-left: 16.66%;
+  margin-right: 16.66%;
+  float: left;
+  padding: 15px 30px 15px 30px;
+}
+
+footer {
+  font-size: 12pt;
+  padding-bottom: 10px;
+  height: 300px;
+
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px 30px 15px 30px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.about1 {
+  width:16.66%;
+  float: left;
+  padding: 15px 30px 15px 30px;
+}
+.about2 {
+  width: 83.33%;
+  float: left;
+  padding: 15px 30px 15px 30px;
+}
+
+.about3 {
+  display:none;
+  width: 100%;
+  float: left;
+  padding: 15px 30px 15px 30px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+
+  }
+.about1 {
+  display: none;
+}
+.about2 {
+  display:none;
+}
+.about3 {
+  display:block;
+}
+.content {
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  float: left;
+  padding: 15px 30px 15px 30px;
+}
+
+}
