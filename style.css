@@ -13,21 +13,19 @@ cursor: url('data:image/svg+xml;utf8,<svg id="svg" xmlns="http://www.w3.org/2000
   src: url('/asset/font/Inter-Italic.woff');
 }
 
-  html{
-    overflow: scroll;
-   overflow-x: hidden;
+.italic {
+  font-style: italic;
 }
-::-webkit-scrollbar {
-   width: 0;  /* Remove scrollbar space */
-   background: transparent;  /* Optional: just make scrollbar invisible */
+.image {
+  padding-top: 100px !important;
 }
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-   background: #FF0000;
-  }
-  ::selection {
-  background: #CCCCCC;
+
+.code {
+ font-family:"Courier New", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; margin:0pt;
 }
+
+
+
 
   body {
     font-family: Inter, font, sans-serif;  /* carattere principale */
@@ -35,6 +33,11 @@ cursor: url('data:image/svg+xml;utf8,<svg id="svg" xmlns="http://www.w3.org/2000
     overflow: visible;
 
 }
+
+[class*="about"] {
+  font-decoration:underline
+}
+
 
 .menu {
   font-size: 14pt;
@@ -124,6 +127,20 @@ a:hover {
   color: grey;
 }
 
+.didascalie {
+  text-align:left;
+  font-size: 10pt;
+  -webkit-column-count: 2;
+      -moz-column-count: 2;
+           column-count: 2;
+
+   -webkit-column-gap: 20px;
+      -moz-column-gap: 20px;
+           column-gap: 20px;
+           padding:0;
+}
+
+
 .content {
   width: 66.66%;
   margin-left: 16.66%;
@@ -132,11 +149,60 @@ a:hover {
   padding: 15px 30px 15px 30px;
 }
 
+
+.contents {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  float: left;
+  padding: 15px 30px 15px 30px;
+
+}
+
+.contentss {
+  width: 33.33%;
+  margin-left: 33.33%;
+  margin-right: 33.33%;
+  float: left;
+  padding: 15px 30px 15px 30px;
+
+}
+
+.cose {
+  display: block;
+   margin-left: auto;
+   margin-right: auto
+}
+
+
+.centered {
+  display: block;
+   margin-left: auto;
+   margin-right: auto
+}
+
+.pagine {
+  width:400px;
+}
+
+.testo-ognicosa {
+  margin-top:100px; margin-bottom:100px;
+  font-size: 10pt;
+  line-height: 12pt;
+  font-family: Garamond, serif;
+ font-style: normal; font-weight: normal; text-decoration: none;
+}
+
 footer {
   font-size: 12pt;
   padding-bottom: 10px;
-  height: 300px;
+}
 
+iframe {
+  padding: 0;
+  border-style: none;
+  border: 0;
+   }
 }
 
 .col-1 {width: 8.33%;}
@@ -197,12 +263,22 @@ footer {
 .about3 {
   display:block;
 }
-.content {
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-  float: left;
-  padding: 15px 30px 15px 30px;
+
+.space {
+  margin-top:100px;
+  margin-bottom:100px;
 }
+
+.m {
+  display: none;
+}
+
+[class*="content"]  {
+    width: 100%;
+    float: left;
+    padding: 15px 30px 15px 30px;
+    margin: 0;
+}
+
 
 }
